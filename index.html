@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/1a61482e4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main-container">
+        <div id="icon-container">
+            <div id="icon">
+                <img src="Wsa.png" alt="Wsalogo" id="icon">
+            </div>
+        </div>
+        <div id="header">
+            <h1 class="header">Calculator</h1>
+        </div>
+
+        <div id="calculator-container">
+            <div id="background-circle">
+                <div id="calculator">
+                    <div id="output-container">
+                        <input type="text" class="output-field" id="display" readonly>
+                        <input type="text" class="input-field" placeholder="0" id="input-screen" readonly>
+                    </div>
+
+                    <!-- Button Rows -->
+                    <section class="btn-row">
+                        <button class="bg-icon clear btn1"><i class="fa-solid fa-c"></i></button>
+                        <button class="bg-icon delete btn1"><i class="fa-solid fa-delete-left"></i></button>
+                        <button class="bg-icon percent btn1"><i class="fa-solid fa-percent"></i></button>
+                    </section>
+
+                    <section class="btn-row">
+                        <button class="bg-icon">(</button>
+                        <button class="bg-icon">)</button>
+                        <button class="bg-icon exponent">^</button>
+                        <button class="bg-icon toggle">+/-</button>
+                        <button class="bg-icon sqrt"><i class="fa-solid fa-square-root-variable"></i></button>
+                    </section>
+
+                    <section class="btn-row">
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button class="bg-icon divide"><i class="fa-solid fa-divide"></i></button>
+                        <button class="bg-icon mod">MOD</button>
+                    </section>
+
+                    <section class="btn-row">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button class="bg-icon multiply"><i class="fa-solid fa-xmark"></i></button>
+                        <button class="bg-icon reciprocal-icon">1/X</button>
+                    </section>
+
+                    <section class="btn-row">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button class="bg-icon plus"><i class="fa-solid fa-plus"></i></button>
+                    </section>
+
+                    <section class="btn-row">
+                        <button class="zero">0</button>
+                        <button>.</button>
+                        <button class="bg-icon minus"><i class="fa-solid fa-minus"></i></button>
+                        <button class="bg-icon equal"><i class="fa-solid fa-equals"></i></button>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Wsa. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
