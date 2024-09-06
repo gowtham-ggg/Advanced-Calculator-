@@ -5,6 +5,8 @@ body {
     padding: 0px;
     background-color: #FBF4FD;
     font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100%;
 }
 
 #main-container {
@@ -142,21 +144,64 @@ footer {
 
 
 @media (max-width : 768px){
+    #icon {
+        height: 30px;
+        width: 80px;
+        margin: auto;
+        margin-left: 0px;
+    }
 
-    #calculator-container{
-        position: relative;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .header {
-       font-size: 10px;
-       position: absolute;
-       top: 5%;
-    }
-    footer{
-        position: absolute;
-        bottom: 0;
+    /* Align icon and header on the same line */
+     #icon-container  {
+        display: inline-flex; 
+        justify-content: space-between; 
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
         
     }
 
+    /* Flexbox for calculator container */
+ #calculator-container {
+       float: none;
+       padding-left: 15%;
+       padding-right: 15%;
+       height: 80%;
+    } 
+
+    /* Make the header responsive */
+    .header {
+        font-size: 16px;
+    }
+
+    /* Footer aligned to bottom and center */
+    footer {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 10px; 
+    }
+}
+
+@media (max-width: 412px) {
+    
+
+    #calculator-container {
+        #calculator-container {
+            float: none;
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 10%;
+            height: 80%;
+         } 
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+        padding-top: 20px; 
+        margin-top: auto; 
+    }
 }
