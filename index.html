@@ -4,36 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/1a61482e4b.js" crossorigin="anonymous"></script>
+    <!-- Linking external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Main container wrapping the entire page content -->
     <main id="main-container">
+        <!-- Icon and header section at the top -->
         <div id="icon-container">
+            <!-- Icon for the logo -->
             <div id="icon">
                 <img src="Wsa.png" alt="Wsalogo" id="icon">
             </div>
+            <!-- Header title -->
             <div id="header">
                 <h1 class="header">Calculator</h1>
             </div>
         </div>
-        
 
+        <!-- Calculator container with circular background -->
         <div id="calculator-container">
             <div id="background-circle">
+                <!-- Calculator box -->
                 <div id="calculator">
+                    <!-- Output container for displaying results -->
                     <div id="output-container">
+                        <!-- Display for the calculation output -->
                         <input type="text" class="output-field" id="display" readonly>
+                        <!-- Input field for showing user input -->
                         <input type="text" class="input-field" placeholder="0" id="input-screen" readonly>
                     </div>
 
-                    <!-- Button Rows 1-->
+                    <!-- Button Rows -->
+
+                    <!-- First row: Clear, Delete, Percent -->
                     <section class="btn-row">
                         <button class="bg-icon clear btn1"><i class="fa-solid fa-c"></i></button>
                         <button class="bg-icon delete btn1"><i class="fa-solid fa-delete-left"></i></button>
                         <button class="bg-icon percent btn1"><i class="fa-solid fa-percent"></i></button>
                     </section>
-                    <!-- Button Rows 2-->
+
+                    <!-- Second row: Parentheses, Exponent, Toggle Sign, Square Root -->
                     <section class="btn-row">
                         <button class="bg-icon">(</button>
                         <button class="bg-icon">)</button>
@@ -41,7 +54,8 @@
                         <button class="bg-icon toggle">+/-</button>
                         <button class="bg-icon sqrt"><i class="fa-solid fa-square-root-variable"></i></button>
                     </section>
-                    <!-- Button Rows 3-->
+
+                    <!-- Third row: Numbers 7, 8, 9, Divide, Modulus -->
                     <section class="btn-row">
                         <button>7</button>
                         <button>8</button>
@@ -49,7 +63,8 @@
                         <button class="bg-icon divide"><i class="fa-solid fa-divide"></i></button>
                         <button class="bg-icon mod">MOD</button>
                     </section>
-                    <!-- Button Rows 4-->
+
+                    <!-- Fourth row: Numbers 4, 5, 6, Multiply, Reciprocal -->
                     <section class="btn-row">
                         <button>4</button>
                         <button>5</button>
@@ -57,14 +72,16 @@
                         <button class="bg-icon multiply"><i class="fa-solid fa-xmark"></i></button>
                         <button class="bg-icon reciprocal-icon">1/X</button>
                     </section>
-                    <!-- Button Rows 5-->
+
+                    <!-- Fifth row: Numbers 1, 2, 3, Plus -->
                     <section class="btn-row">
                         <button>1</button>
                         <button>2</button>
                         <button>3</button>
                         <button class="bg-icon plus"><i class="fa-solid fa-plus"></i></button>
                     </section>
-                    <!-- Button Rows 6-->
+
+                    <!-- Sixth row: Number 0, Decimal, Minus, Equal -->
                     <section class="btn-row">
                         <button class="zero">0</button>
                         <button>.</button>
@@ -76,9 +93,13 @@
         </div>
 
     </main>
+
+    <!-- Footer section -->
     <footer id="footer">
         <p>&copy; 2024 Wsa. All rights reserved.</p>
     </footer>
+
+    <!-- Linking external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
