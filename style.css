@@ -255,8 +255,7 @@ footer {
     /* Adjust calculator container on small screens */
     #calculator-container {
         float: none;
-        padding-left: 25%;
-        padding-right: 15%;
+        padding-left: 35%;
         height: 80%;
     }
 
